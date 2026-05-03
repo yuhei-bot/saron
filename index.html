@@ -109,6 +109,47 @@
       .fv-center p { font-size: 1.8rem; letter-spacing: 6px; }
       .fv-line-wrap img { width: 110px; height: 110px; }
     }
+
+    /* --- Price セクション専用スタイル --- */
+    .price-container {
+      padding: 0 25px 10px;
+    }
+    .price-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .price-item:last-of-type {
+      border-bottom: none;
+    }
+    .price-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .menu-name {
+      font-size: 0.85rem;
+      font-weight: bold;
+      color: var(--text);
+    }
+    .menu-time {
+      font-size: 0.65rem;
+      color: #999;
+      margin-top: 2px;
+    }
+    .price-value {
+      font-size: 1rem;
+      font-weight: 200;
+      color: var(--accent);
+      letter-spacing: 1px;
+    }
+    .price-note {
+      font-size: 0.6rem;
+      text-align: center;
+      color: #999;
+      margin-top: 15px;
+    }
   </style>
 </head>
 <body>
@@ -159,6 +200,8 @@
       </div>
     </div>
 
+    
+
     <div class="glass-section">
       <div class="section-label">INTERIOR</div>
       <div class="slider-outer">
@@ -173,6 +216,46 @@
       </div>
     </div>
 
+    <!-- MENU & PRICE セクション -->
+    <div class="glass-section">
+      <div class="section-label">MENU & PRICE</div>
+      <div class="price-container">
+        <div class="price-item">
+          <div class="price-info">
+            <span class="menu-name">カット（シャンプー・ブロー込）</span>
+            <span class="menu-time">目安：60分</span>
+          </div>
+          <div class="price-value">¥6,600〜</div>
+        </div>
+
+        <div class="price-item">
+          <div class="price-info">
+            <span class="menu-name">カラー＋トリートメント</span>
+            <span class="menu-time">目安：120分</span>
+          </div>
+          <div class="price-value">¥13,200〜</div>
+        </div>
+
+        <div class="price-item">
+          <div class="price-info">
+            <span class="menu-name">髪質改善プレミアムコース</span>
+            <span class="menu-time">目安：150分</span>
+          </div>
+          <div class="price-value">¥18,700〜</div>
+        </div>
+
+        <div class="price-item">
+          <div class="price-info">
+            <span class="menu-name">カット＋パーマ</span>
+            <span class="menu-time">目安：150分</span>
+          </div>
+          <div class="price-value">¥14,300〜</div>
+        </div>
+
+        <p class="price-note">※ロング料金別途 / 全て税込価格</p>
+      </div>
+    </div>
+    
     <div class="glass-section">
       <footer class="footer-info">
         <div class="info-grid">
